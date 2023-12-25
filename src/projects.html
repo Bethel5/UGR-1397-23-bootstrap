@@ -3,37 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <title>My portfolio</title>
 </head>
 <body>
-    <header><h2>Projects</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="contactme.html">Contact me</a>
-    <hr>
-    <div>
-    <figure>
-    <img src="images/project1flowershopwebsite.jpg" alt="flower shop website">
-        <figcaption>Jenstore Flower shop</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
-        <figcaption>Flavored Coffee</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project3eventplannig.jpg" alt="event planning website">
-        <figcaption>Elevate Decor</figcaption></figure>
-    <br>
+    <div class="container bg-warning-subtle">    
+        <header class="header bg-warning" id="header">
+            <nav class="navbar navbar-expand-lg navbar-warning ">
+                <h1 class="navbar-text text-black p-2">Projects</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a href="./home.html" class="nav-link text-black">Home</a>
+                        <a href="./aboutme.html" class="nav-link text-black">About Me</a>
+                        <a href="./experience&skills.html" class="nav-link text-black">Experience & Skills</a>
+                        <a href="./contactme.html" class="nav-link text-black">Contact Me</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row flex-md-row  flex-column">
+            
+                <div class="col-lg-4 col-md-6 mt-4 col-sm-6">
+                    <figure class="img">
+                        <img src="images/project1flowershopwebsite.jpg" class="img" alt="flower shop website" width="300">
+                        <figcaption>Jenstore Flower shop</figcaption>
+                    </figure>
+                </div>
+            
+
+                <div class="col-lg-4 col-md-6 mt-4 col-sm-6">
+                    <figure class="img">
+                        <img src="images/project2coffeeshopwebsite.jpg" class="img" alt="coffee shop website" width="300" height="450">
+                        <figcaption>Flavored Coffee</figcaption>
+                    </figure>
+                </div>
+            
+
+            
+                <div class="col-lg-4 col-md-6 mt-4 col-sm-6">
+                    <figure class="img">
+                        <img src="images/project3eventplannig.jpg" class="img" alt="event planning website" width="300" height="450">
+                        <figcaption>Elevate Decor</figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="col-md-6 mb-4 col-sm-6">
+                    <div class="youtube-vid text-center">
+                        <figure>
+                            <iframe class="video" src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="300" height="450"></iframe>
+                            <figcaption>Avis car rental</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            
+        </div>
+
+        <hr class="mt-4">
+
+        <footer class="mt-4">
+            <a a class="foot text-black" href="contactme.html">Contact Me</a>
+        </footer>
     </div>
-    <div>
-    <figure>
-        <iframe src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <figcaption>Avis car rental</figcaption></figure>
-                   
-    </div>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

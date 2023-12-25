@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <title>My portfolio</title>
 </head>
 <body>
-    <header><h2>Contact Me</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="projects.html">Projects</a>
-    <hr>
-    <br>
-        <h3>Get in touch with me!</h3>
-    <br>
-    
-    <table>
-        
-        <tr>
-            <td>
-                <img src="images/phoneicon.png" alt="phone icon">+251900000000
-            </td>
-            <td>
-                <img src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
-            </td>
-            
+    <div class="container bg-warning-subtle">
+        <header class="header bg-warning" id="header">
+            <nav class="navbar navbar-expand-lg navbar-warning ">
+                <h1 class="navbar-text text-black p-2">Contact Me</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a href="./home.html" class="nav-link text-black">Home</a>
+                        <a href="./aboutme.html" class="nav-link text-black">About Me</a>
+                        <a href="./experience&skills.html" class="nav-link text-black">Experience & Skills</a>
+                        <a href="./projects.html" class="nav-link text-black">Projects</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <h3 class="content mt-4">Get in touch with me!</h3>
 
-        <tr>
-            <td>
-                <img src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
-            </td>
-            <td>
-                <img src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
-            </td>
-            </tr>                
-            
-   
-    </table>
-    <br>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+        <div class="table-responsive mt-4">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/phoneicon.png" alt="phone icon" width="50" height="50"> +251900000000
+                        </td>
+                        <td>
+                            <img src="images/gmailicon.png" alt="gmail icon" width="50" height="50"> betheldereje5@gmail.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/telegramicon.png" alt="telegram icon" width="50" height="50"> @b_e_th_e_l
+                        </td>
+                        <td>
+                            <img src="images/instagramicon.png" alt="instagram icon" width="50" height="50"> @b_e_th_e_l
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="mt-4">
+
+        <footer class="mt-4">
+            <a a class="foot text-black" href="contactme.html">Contact Me</a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

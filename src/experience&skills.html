@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <title>My portfolio</title>
 </head>
 <body>
-    <header><h2>Experience & Skills</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="contactme.html">Contact me</a>
-    <hr>
-    <div>
-        <h3>Experience</h3>
-        <ul>
-            <li>Collaborating with clients to determine website requirements and goals..</li>
-            <li>Designing website layouts and user interfaces using tools like Adobe Photoshop, figma or Sketch. </li>
-            <li>Writing HTML, CSS, and JavaScript code to implement website designs.</li>
-            <li>Troubleshooting technical issues and bugs in website functionality.</li>
-        </ul>
-        <img src="images/hardworkingphoto.jpg"alt="workspace photo">
+    <div class="container  bg-warning-subtle">
+        <header class="header bg-warning" id="header">
+            <nav class="navbar navbar-expand-lg navbar-warning ">
+                <h1 class="navbar-text text-black p-2">Experience & Skills</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a href="./home.html" class="nav-link text-black">Home</a>
+                        <a href="./aboutme.html" class="nav-link text-black">About Me</a>
+                        <a href="./projects.html" class="nav-link text-black">Projects</a>
+                        <a href="./contactme.html" class="nav-link text-black">Contact Me</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row flex-lg-row flex-column">
+            <div class="col-lg-6 ">
+                <div class="content row-lg-4">
+                    <h2 class="title mt-2">Experience</h2>
+                    <ul>
+                        <li>Collaborating with clients to determine website requirements and goals.</li>
+                        <li>Designing website layouts and user interfaces using tools like Adobe Photoshop, Figma, or Sketch. </li>
+                        <li>Writing HTML, CSS, and JavaScript code to implement website designs.</li>
+                        <li>Troubleshooting technical issues and bugs in website functionality.</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <img src="images/hardworkingphoto.jpg" class="img mt-4" alt="workspace photo" width="300" height="250">
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="content">
+                    <h2>Skills</h2>
+                    <img src="images/venndiagram2x.png" class="img" alt="venn diagram" width="450" height="400">
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-4">
+
+        <footer class="mt-4">
+            <a a class="foot text-black" href="contactme.html">Contact Me</a>
+        </footer>
     </div>
-    <br>
-    <div>
-        <h3>Skills</h3>
-        <img src="images/venndiagram2x.png"alt="venn diagram">
-        
-        
-    </div>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
